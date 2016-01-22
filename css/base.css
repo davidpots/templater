@@ -84,6 +84,9 @@ body {
   background: #ddd;
 }
 
+.profile-logo {
+  max-width: 100%;
+}
 
 textarea {
   width: 100%;
@@ -149,8 +152,8 @@ input:focus {
 [data-font="Helvetica Neue"] {
   font-family: "Helvetica Neue";
 }
-[data-font="Georgia"] {
-  font-family: "Georgia";
+[data-font="Oswald"] {
+  font-family: "Oswald";
 }
 [data-font="Courier"] {
   font-family: "Courier";
@@ -160,4 +163,12 @@ input:focus {
 }
 [data-font="Tahoma"] {
   font-family: "Tahoma";
+}
+
+[data-font="PT Sans Narrow"] {
+  font-family: "PT Sans Narrow";
+}
+
+[data-font="Playfair Display"] {
+  font-family: "Playfair Display";
 }

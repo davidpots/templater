@@ -1,36 +1,28 @@
 var profiles = {
             "Hoover's" : {
                             'name' : "Hoover\'s",
-                            'logo' : '',
-                            'fonts' : ['Open Sans','Georgia'],
+                            'logo' : 'logo-hoovers.png',
+                            'fonts' : ['Open Sans','Oswald'],
                             'colors' : ['#FFE001','#C83C09','#F88C00','#009ADD','#B6561B'],
                             'photos' : ['','']
                           },
+
+            "Eagle Transmission" : {
+                            'name' : "Eagle Transmission",
+                            'logo' : 'logo-eagletransmission.png',
+                            'fonts' : ['Helvetica Neue','PT Sans Narrow'],
+                            'colors' : ['#D9242A','#173785','#304050','#DEE7F1'],
+                            'photos' : ['','']
+                          },
+
             "Elements" : {
                             'name' : 'Elements',
-                            'logo' : '',
-                            'fonts' : ['Courier','Tahoma'],
+                            'logo' : 'logo-elements.png',
+                            'fonts' : ['Playfair Display','Tahoma'],
                             'colors' : ['#B3F4F6','#1BB5CA','#76899E','#F2EFEC','#D1C5B7','#DF3B39'],
                             'photos' : ['','']
                           },
 }
-
-// var profiles = [
-//                   { 'name' : 'Hoover\'s',
-//                     'logo' : '',
-//                     'fonts' : ['',''],
-//                     'colors' : ['#FFE001','#C83C09','#F88C00','#009ADD','#B6561B'],
-//                     'photos' : ['',''] },
-//                   { 'name' : 'Elements',
-//                     'logo' : '',
-//                     'fonts' : ['',''],
-//                     'colors' : ['#B3F4F6','#1BB5CA','#76899E','#F2EFEC','#D1C5B7','#DF3B39'],
-//                     'photos' : ['',''] }
-// ];
-
-
-
-
 
 $(document).ready(function(){
 
@@ -43,10 +35,14 @@ $(document).ready(function(){
   $("#profile-list").change(function () {
 
      $('.profile-ui h3').show();
+     $('.profile-logo').attr('src','');
      $('.color-list li').remove();
      $('.font-list li').remove();
 
      var selectedProfile = this.value;
+
+     /* Show the logo for that profile */
+     $('.profile-logo').attr('src','images/'+profiles[selectedProfile].logo);
 
      /* Show the colors for that profile */
      $.each(profiles[selectedProfile].colors, function(i,obj) {
@@ -75,13 +71,13 @@ $(document).ready(function(){
   $(document).on('click','.color-list li',function(){
     clr = $(this).data('color');
 
-    if ( $('input.active').data('color-background') ) {
-      $('input.active').val(clr);
+    if ( $('.active').data('color-background') ) {
+      // $('.active').val(clr);
       $('.result-ui').css('backgroundColor',clr);
     }
 
-    if ( $('input.active').data('color-text') ) {
-      $('input.active').val(clr);
+    if ( $('.active').data('color-text') ) {
+      // $('.active').val(clr);
       $('#primary-text--result').css('color',clr);
     }
 
@@ -91,8 +87,8 @@ $(document).ready(function(){
   $(document).on('click','.font-list li',function(){
     fnt = $(this).data('font');
 
-    if ( $('input.active').data('font-face') ) {
-      $('input.active').val(fnt);
+    if ( $('.active').data('font-face') ) {
+      // $('input.active').val(fnt);
       $('.result-ui').css('font-family',fnt);
     }
   });
