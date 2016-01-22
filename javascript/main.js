@@ -72,7 +72,7 @@ $(document).ready(function(){
     clr = $(this).data('color');
 
     if ( $('.active').data('color-background') ) {
-      // $('.active').val(clr);
+      $('.active').val(clr);
       $('.result-ui').css('backgroundColor',clr);
     }
 
