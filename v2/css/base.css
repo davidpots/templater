@@ -1,4 +1,4 @@
-  /* -- SETUP -- */
+/* -- SETUP -- */
 
         * {
         	margin: 0; padding: 0;
@@ -110,6 +110,20 @@ input:focus {
   background: #333;
 }
 
+#primary-text--result {
+  color: #333;
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: bold;
+  padding: 32px;
+}
+.centered-vh {
+  text-align: center;
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+}
+
 .color-list {
   margin: 0 0 16px 0;
 }
@@ -135,114 +149,26 @@ input:focus {
   font-size: 14px;
 }
 
-/* Identity: Photo List */
+[data-font="Helvetica Neue"] {
+  font-family: "Helvetica Neue";
+}
+[data-font="Oswald"] {
+  font-family: "Oswald";
+}
+[data-font="Courier"] {
+  font-family: "Courier";
+}
+[data-font="Open Sans"] {
+  font-family: "Open Sans";
+}
+[data-font="Tahoma"] {
+  font-family: "Tahoma";
+}
 
-    .photo-list {
-      margin: 0;
-    }
-    .photo-list li {
-      list-style: none;
-      display: inline-block;
-      margin: 0 5px 0 0;
-    }
-    .photo-list li img {
-      width: 100px;
-    }
+[data-font="PT Sans Narrow"] {
+  font-family: "PT Sans Narrow";
+}
 
-/* --- */
-
-
-
-/* --- */
-
-[data-font="Helvetica Neue"] { font-family: "Helvetica Neue"; }
-[data-font="Oswald"] { font-family: "Oswald"; }
-[data-font="Courier"] { font-family: "Courier"; }
-[data-font="Open Sans"] { font-family: "Open Sans"; }
-[data-font="Tahoma"] { font-family: "Tahoma"; }
-[data-font="PT Sans Narrow"] { font-family: "PT Sans Narrow"; }
-[data-font="Playfair Display"] { font-family: "Playfair Display"; }
-
-
-/* ------ */
-
-/* All templates */
-
-    .tmark {
-      display: none;
-    }
-
-    .template-item {
-      display: none;
-    }
-
-/* Template 001 */
-
-    .tmark-001 {
-      height: 100%;
-    }
-    .tmark-001--bg-color {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-    }
-    .tmark-001--text-container {
-      height: 100%;
-      position: relative;
-    }
-    .tmark-001--text-primary {
-      color: #333;
-      font-size: 32px;
-      line-height: 1.25;
-      font-weight: bold;
-      padding: 32px;
-      text-align: center;
-      transform: translateY(-50%);
-      top: 50%;
-    }
-
-/* Template 002 */
-
-    .tmark-002 {
-      height: 100%;
-      position: relative;
-    }
-    .tmark-002--bg-image {
-      position: absolute;
-      width: 100%;
-      z-index: 1;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-image: url(../images/bg-temp1.jpg);
-      height: 100%;
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      filter: grayscale(100%);
-    }
-    .tmark-002--bg-color {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      z-index: 2;
-      background-color: black;
-      opacity: .7;
-    }
-    .tmark-002--text-container {
-      position: relative;
-      z-index: 3;
-      padding: 0 10%;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    .tmark-002--text-primary {
-      color: #fff;
-      font-size: 32px;
-      line-height: 1.3;
-    }
-    .tmark-002--text-secondary {
-      color: #fff;
-      font-weight: normal;
-      font-size: 18px;
-      margin-top: 24px;
-    }
+[data-font="Playfair Display"] {
+  font-family: "Playfair Display";
+}
