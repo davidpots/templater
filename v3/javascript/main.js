@@ -3,7 +3,7 @@ var profiles = {
                             'name' : "Hoover\'s",
                             'logo' : 'logo-hoovers.png',
                             'fonts' : ['Open Sans','Oswald'],
-                            'colors' : ['#FFE001','#C83C09','#F88C00','#009ADD','#B6561B'],
+                            'colors' : ['#FFE001','#C83C09','#F88C00','#009ADD','#B6561B','#FFFFFF'],
                             'photos' : ['hoovers-1.jpg',
                                         'hoovers-2.jpg',
                                         'hoovers-3.jpg',

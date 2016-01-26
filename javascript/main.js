@@ -123,9 +123,13 @@ $(document).ready(function(){
       $('.tmark-bg-color').css('backgroundColor',clr);
     }
 
-    if ( $('.active').data('color-text') ) {
+    if ( $('.active').data('text-primary') ) {
       // $('.active').val(clr);
       $('.tmark-text-primary').css('color',clr);
+    }
+
+    if ( $('.active').data('text-secondary') ) {
+      // $('.active').val(clr);
       $('.tmark-text-secondary').css('color',clr);
     }
 
@@ -137,7 +141,8 @@ $(document).ready(function(){
 
     if ( $('.active').data('font-face') ) {
       // $('input.active').val(fnt);
-      $('.result-ui').css('font-family',fnt);
+      $('.tmark-text-primary').css('font-family',fnt);
+      $('.tmark-text-secondary').css('font-family',fnt);
     }
   });
 
