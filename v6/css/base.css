@@ -224,13 +224,20 @@ input:focus {
       position: absolute;
       height: 100%;
       width: 100%;
-      z-index: 2;
+      z-index: 3;
       background-color: black;
       opacity: .7;
     }
+    .tmark-002--bg-darkener {
+      z-index: 2;
+      background-color: rgba(0,0,0,0.5);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
     .tmark-002--text-container {
       position: relative;
-      z-index: 3;
+      z-index: 4;
       padding: 0 10%;
       top: 50%;
       transform: translateY(-50%);

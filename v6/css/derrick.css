@@ -267,19 +267,19 @@ span.color4:before {
 
 .page-head {
   background: #eee;
-  height: 400px;
+  height: 270px;
   position: relative;
   width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   background-image: radial-gradient(50% 150%, #EEE   50%, #DDD   100%);
 }
 .customer-logo-wrapper {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -20px;
-  padding: 50px;
-  width: 500px;
+  bottom: -36px;
+  padding: 10px;
+  width: 350px;
   background: white;
   box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
   text-align: center;
