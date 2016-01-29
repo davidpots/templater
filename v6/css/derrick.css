@@ -1,0 +1,286 @@
+/* Main
+------------------------- */
+body {
+  font-family: 'Lato',sans-serif;
+  font-size: 16px !important;
+  font-weight: 300;
+}
+
+p {
+  line-height: 24px !important;
+}
+
+.customer-logo {
+  background: none;
+  margin: 0 auto;
+  /*height: 240px;*/
+  /*width: 680px;*/
+  /*padding: 100px 0 100px 0;*/
+}
+
+.customer-name {
+  font-size: 30px;
+  color: #555;
+  margin-top: -5px;
+}
+
+.customer-bio {
+  font-family: 'Lato',sans-serif;
+  font-weight: 300;
+  max-width: 100%;
+  text-rendering:optimizeSpeed;
+  padding-bottom: 20px;
+}
+
+.customer-phone {
+  font-family: 'Lato',sans-serif;
+  font-weight: 300;
+  max-width: 100%;
+}
+
+.customer-address {
+  font-family: 'Lato',sans-serif;
+  font-weight: 300;
+  max-width: 100%;
+}
+
+.customer-website {
+  font-family: 'Lato',sans-serif;
+  font-weight: 300;
+  max-width: 100%;
+}
+
+
+.brand-term {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  padding-right: 40px;
+  display: inline;
+}
+
+.brand-adjectives {
+  background: none;
+  margin: 0 auto;
+  height:auto;
+  width: 800px;
+  padding-top: 40px;
+}
+
+.verticals {
+  font-weight: 500;
+}
+
+.pb1 {
+  padding-bottom: 10px;
+}
+
+.pb2 {
+  padding-bottom: 20px;
+}
+
+.pt1 {
+  padding-top: 10px;
+}
+
+.pt2 {
+  padding-top: 20px;
+}
+
+.pt3 {
+  padding-top: 30px;
+}
+
+.bt1 {
+  border-top: 1px solid #E6E6E6;
+}
+
+.bt2 {
+  border-top: 1px solid #E6E6E6;
+  margin-top: -100px;
+}
+
+.lead-header {
+  background: radial-gradient(50% 150%,#FDC92B 50%,#FB9813 100%);
+  height: 400px;
+}
+
+
+.customer-photos {
+  padding: 0;
+  margin-left: -10px;
+}
+
+.customer-photos li {
+  display: inline;
+}
+
+.customer-photos li img {
+  max-width: 400px;
+  margin: 0 0 10px 10px;
+}
+
+
+
+
+/* hours
+------------------------- */
+div.hours {
+  margin-left: -15px;
+  display: flex;
+  height: 300px;
+}
+
+ul {
+  margin: 0;
+  padding: 0 15px 15px;
+  list-style: none;
+}
+
+ul li {
+  padding-top: 4px;
+  color: #777;
+}
+
+/* Brand Colors
+------------------------- */
+/*span {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+span:before {
+  content: "";
+  flex-shrink: 0;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  line-height: 20px;
+  text-align: left;
+}*/
+
+span.color1:before {
+  background: #262626;
+}
+
+span.color2:before {
+  background: #D5751E;
+}
+
+span.color3:before {
+  background: orange;
+}
+
+span.color4:before {
+  background: #E6DDC7;
+}
+
+/* ---- color swatches ---- */
+.flex {
+  margin: 24px 0;
+  width: 150vw;
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-transition: padding 500ms ease;
+  transition: padding 500ms ease;
+}
+
+.item:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  color: #fff;
+  font-size: 1vw;
+  text-transform: uppercase;
+  -webkit-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+}
+
+.item:hover {
+  padding: 0 1%;
+}
+
+.item:hover:before {
+  opacity: 1;
+}
+
+.item-1 {
+  background-color: #c63f1b;
+}
+
+.item-1:before {
+  content: '#c63f1b';
+}
+
+.item-2 {
+  background-color: #f68b1f;
+}
+
+.item-2:before {
+  content: '#f68b1f';
+}
+
+.item-3 {
+  background-color: #ffde16;
+}
+
+.item-3:before {
+  content: '#ffde16';
+}
+
+.item-4 {
+  background-color: #009bda;
+}
+
+.item-4:before {
+  content: '#009bda';
+}
+
+/* Utility styles from Pots */
+.mbm { margin-bottom: 16px; }
+.mbn { margin-bottom: 0; }
+.pas { padding: 8px; }
+.full-width { width: 100%; }
+.center { text-align: center; }
+.block { display: block; }
+.hide { display: none; }
+.bg-gray { background: #eee; }
+
+
+/* -- */
+
+.page-head {
+  background: #eee;
+  height: 400px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 80px;
+  background-image: radial-gradient(50% 150%, #EEE   50%, #DDD   100%);
+}
+.customer-logo-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+  padding: 50px;
+  width: 500px;
+  background: white;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  text-align: center;
+}
