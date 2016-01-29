@@ -10,7 +10,7 @@ $(document).ready(function(){
   $(".customer-select").change(function () {
 
     // Unhide the profile
-    $('.customer-profile').show();
+    $('.customer-wrapper').show();
 
     // Remove any existing photos
     $('.customer-photos li').remove();
