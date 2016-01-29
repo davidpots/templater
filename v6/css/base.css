@@ -162,6 +162,21 @@ input:focus {
 [data-font="Tahoma"] { font-family: "Tahoma"; }
 [data-font="PT Sans Narrow"] { font-family: "PT Sans Narrow"; }
 [data-font="Playfair Display"] { font-family: "Playfair Display"; }
+[data-font="Buttermilk"] { font-family: "Buttermilk"; }
+[data-font="League Spartan"] { font-family: "League Spartan"; }
+
+
+[data-font-current="Buttermilk"] {
+  font-size: 172px !important;
+  line-height: .89 !important;
+  font-weight: normal !important;
+}
+
+[data-font-current="League Spartan"] {
+  font-size: 42px !important;
+  line-height: 1.2 !important;
+  font-weight: normal !important;
+}
 
 
 /* ------ */

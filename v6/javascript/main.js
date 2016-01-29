@@ -156,7 +156,7 @@ $(document).ready(function(){
 
     if ( $('.active').data('font-face') ) {
       // $('input.active').val(fnt);
-      $('.tmark-text-primary').css('font-family',fnt);
+      $('.tmark-text-primary').attr('data-font-current',fnt).css('font-family',fnt);
       $('.tmark-text-secondary').css('font-family',fnt);
     }
   });
