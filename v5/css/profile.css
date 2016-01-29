@@ -17,7 +17,7 @@
 
 /* -- GENERAL TYPOGRAPHY -- */
 
-      a  { color: #f05a28; }
+      a  { color: blue; }
 
       h1,h2,h3,h4,h5,h6 { margin: 0 0 4px 0; }
 
@@ -54,6 +54,7 @@
 /* -- */
 
 .mbm { margin-bottom: 16px; }
+.mbn { margin-bottom: 0; }
 .pas { padding: 8px; }
 .full-width { width: 100%; }
 .center { text-align: center; }

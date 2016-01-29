@@ -13,7 +13,7 @@ $(document).ready(function(){
     $('.customer-profile').show();
 
     // Remove any existing photos
-    $('.photo-list li').remove();
+    $('.customer-photos li').remove();
 
     var customer = this.value;
 
@@ -32,6 +32,8 @@ $(document).ready(function(){
        $('.customer-photos').append($('<li><img data-bg-image="'+obj+'" src="images/merchants/'+obj+'" /></li>'));
      });
 
+     // Inject the URL paramater into the template link
+     $('.customer-template-link').attr('href','templater.html?customerName=' + profiles[customer].name);
 
     //  $('.profile-ui h3').show();
     //  $('.profile-logo').attr('src','');

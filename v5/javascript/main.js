@@ -1,3 +1,19 @@
+// Read URL params
+function getUrlVars() {
+  // look for comment by SpaceLobster to make the orig post's code return an object instead of array
+  var params = {}, d = function (s) { return s ? decodeURIComponent(s.replace(/\+/, " ")) : null; }
+  if(window.location.search) $.each(window.location.search.substring(1).split('&'), function(i, v) {
+  var pair = v.split('=');
+  params[d(pair[0])] = d(pair[1]);
+  });
+  return params;
+}
+var urlVars = getUrlVars();
+
+
+
+
+
 $(document).ready(function(){
 
   /* PROFILE LIST: populate the dropdown */
@@ -42,6 +58,8 @@ $(document).ready(function(){
 
   });
 
+
+
   /* PROFILE LIST: on dropdown change */
   $("#profile-list").change(function () {
 
@@ -70,7 +88,21 @@ $(document).ready(function(){
      $.each(profiles[selectedProfile].photos, function(i,obj) {
        $('.photo-list').append($('<li><img data-bg-image="'+obj+'" src="images/merchants/'+obj+'" /></li>'));
      });
+
    });
+
+   // If a customer name is passed via the URL param of 'customerName', auto-change the customer dropdown accordingly
+   // via http://stackoverflow.com/a/18665043 which I don't understand, but hey...
+   if ( urlVars.customerName != null ) {
+     var mySelect = $('#profile-list');
+     var toSwtichTo = $('#profile-list option[value="'+urlVars.customerName+'"]');
+     var myVal = $(toSwtichTo, mySelect).attr('value');
+     mySelect.val(myVal).trigger('change');
+   }
+
+
+
+
 
   /* Set active input or textarea on click */
   $('.layout-ui input, .layout-ui textarea').focus(function(){
