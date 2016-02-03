@@ -62,6 +62,11 @@ $(document).ready(function(){
      bgTypeUIPrep(); // check if the radio buttons are clicked
   });
 
+  $('input[data-bg-image=true]').change(function(){
+    image = $(this).val();
+    $('.tmark-bg-image').css('background-image','url('+image+')');
+  });
+
   /* TEMPLATE LIST: on dropdown change */
   $("#template-list").change(function () {
 
