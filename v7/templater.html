@@ -58,36 +58,37 @@
         </select>
 
 
+        <div class="template-ui-wrapper">
+          <h3>Text</h3>
+          <div class="pill template-item template-item--text-primary">
+            <label>Primary Text:</label>
+            <textarea data-font-face="true" data-text-primary="true" class="primary-text--input"></textarea>
+          </div>
 
-        <h3>Text</h3>
-        <div class="pill template-item template-item--text-primary">
-          <label>Primary Text:</label>
-          <textarea data-font-face="true" data-text-primary="true" class="primary-text--input"></textarea>
-        </div>
+          <div class="pill template-item template-item--text-secondary">
+            <label>Secondary Text:</label>
+            <textarea data-font-face="true" data-text-secondary="true" class="secondary-text--input"></textarea>
+          </div>
 
-        <div class="pill template-item template-item--text-secondary">
-          <label>Secondary Text:</label>
-          <textarea data-font-face="true" data-text-secondary="true" class="secondary-text--input"></textarea>
+          <h3>Background</h3>
+          <div class="pill template-item">
+            <ul class="no-bullet">
+              <li><label><input type="radio" name="bgType" value="bgColorOnly" checked> Solid color</label></li>
+              <li><label><input type="radio" name="bgType" value="bgImageColor"> Image with color</label></li>
+              <li><label><input type="radio" name="bgType" value="bgImageOnly"> Image only</label></li>
+            </ul>
+          </div>
+          <div class="pill template-item template-item--bg-color">
+            <label>BG Color:</label>
+            <input data-bg-color="true" class="" type="text" value="..." />
+          </div>
+          <div class="pill template-item template-item--bg-image">
+            <label>BG Image URL:</label>
+            <input data-bg-image="true" class="" type="text" value="..." />
+          </div>
+          <h3>Scale</h3>
+          <input class="scaleSlider" type="range" min="1" max="100" step="1" value="50" name="page" />
         </div>
-
-        <h3>Background</h3>
-        <div class="pill template-item">
-          <ul class="no-bullet">
-            <li><label><input type="radio" name="bgType" value="bgColorOnly" checked> Solid color</label></li>
-            <li><label><input type="radio" name="bgType" value="bgImageColor"> Image with color</label></li>
-            <li><label><input type="radio" name="bgType" value="bgImageOnly"> Image only</label></li>
-          </ul>
-        </div>
-        <div class="pill template-item template-item--bg-color">
-          <label>BG Color:</label>
-          <input data-bg-color="true" class="" type="text" value="..." />
-        </div>
-        <div class="pill template-item template-item--bg-image">
-          <label>BG Image URL:</label>
-          <input data-bg-image="true" class="" type="text" value="..." />
-        </div>
-        <h3>Scale</h3>
-        <input class="scaleSlider" type="range" min="1" max="100" step="1" value="50" name="page" />
 
       </div>
       <div class="tile result-ui">

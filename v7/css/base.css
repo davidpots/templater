@@ -172,6 +172,9 @@ input:focus {
     .template-item {
       /*display: none;*/
     }
+    .template-ui-wrapper {
+      display: none;
+    }
     h4 { font-size: 16px; }
     .pill {
       background: #222;

@@ -62,6 +62,8 @@ $(document).ready(function(){
   /* TEMPLATE LIST: on dropdown change */
   $("#template-list").change(function () {
 
+    $('.template-ui-wrapper').show();
+
     /* Boring UI prep stuff */
     $('.tmark').hide();
     $('.active-template').removeClass('active-template');
