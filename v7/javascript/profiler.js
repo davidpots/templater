@@ -29,7 +29,7 @@ $(document).ready(function(){
 
      // Inject all photos
      $.each(profiles[customer].photos, function(i,obj) {
-       $('.customer-photos').append($('<li><img data-bg-image="'+obj+'" src="images/merchants/'+obj+'" /></li>'));
+       $('.customer-photos').append($('<li><img data-bg-image="'+obj+'" src="'+obj+'" /></li>'));
      });
 
      // Inject the URL paramater into the template link

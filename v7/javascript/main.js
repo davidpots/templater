@@ -33,6 +33,7 @@ $(document).ready(function(){
     if($('input[value=bgColorOnly').is(':checked')) {
       $('.template-item--bg-image').hide();
       $('.template-item--bg-color').show();
+      $('.tmark-text-primary').removeClass('has-text-shadow');
       $('.tmark-bg-image').hide();
       $('.tmark-bg-color').show();
       $('.tmark-bg-color').removeClass('bg-screen');
@@ -40,6 +41,7 @@ $(document).ready(function(){
     if($('input[value=bgImageColor').is(':checked')) {
       $('.template-item--bg-image').show();
       $('.template-item--bg-color').show();
+      $('.tmark-text-primary').removeClass('has-text-shadow');
       $('.tmark-bg-image').show();
       $('.tmark-bg-image').addClass('bg-desaturate');
       $('.tmark-bg-color').addClass('bg-screen');
@@ -48,6 +50,7 @@ $(document).ready(function(){
     if($('input[value=bgImageOnly').is(':checked')) {
       $('.template-item--bg-color').hide();
       $('.template-item--bg-image').show();
+      $('.tmark-text-primary').addClass('has-text-shadow');
       $('.tmark-bg-image').show();
       $('.tmark-bg-image').removeClass('bg-desaturate');
       $('.tmark-bg-color').hide();
@@ -118,7 +121,7 @@ $(document).ready(function(){
 
      /* Show the photos for that profile */
      $.each(profiles[selectedProfile].photos, function(i,obj) {
-       $('.photo-list').append($('<li><img data-bg-image="'+obj+'" src="images/merchants/'+obj+'" /></li>'));
+       $('.photo-list').append($('<li><img data-bg-image="'+obj+'" src="'+obj+'" /></li>'));
      });
 
    });
@@ -180,7 +183,7 @@ $(document).ready(function(){
 
     if ( $('.active').data('bg-image') ) {
       $('input.active').val(image);
-      $('.tmark-bg-image').css('background-image','url(images/merchants/'+image+')');
+      $('.tmark-bg-image').css('background-image','url('+image+')');
     }
   });
 

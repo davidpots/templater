@@ -1,4 +1,25 @@
 var profiles = {
+            "Delish" : {
+                            'name' : "Delish",
+                            'logo' : 'logo-delish.png',
+                            'bio'   : "Delish began in 2009, the fulfillment of a lifelong dream of founder Lisa Matulis-Thomajan. Over the years, Delish has grown from a tiny cupcake shop offering a few flavors to a full service cake and dessert bakery. Our scratch made delectables are hand crafted and served by our passionate, creative, and experienced staff members.",
+                            'phone' : "(512) 473-4118",
+                            'website': "www.delishaustin.com/",
+                            'address': "209 W. 3rd Street, Austin, Texas 78701",
+                            'fonts' : ['Damion','Lato'],
+                            'colors' : ['#FFE800','#E6CA80','#5E5132','#FF738E','#FF002F','#14FCFC','#1D2024','#A8EA5A','#FFF'],
+                            'photos' : ['https://drive.google.com/uc?id=0B_TWeTee0fCmY3JNektqbVluYkU',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmb1FMZk1xSnkzMm8',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmU242NWhzR29XejA',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmRDVzaERnVDJJMDg',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmVTRTM21HZG9KVjA',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmLVkwY3h1QVo3cVU',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmYXo3VENnMGdEQjg',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmbzNLSl9DRnd5aDg',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmcHdsaFN2VEUxRGM',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmb0wyMlZ1dnU5ZVk',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmdWotLUhIWG9aOGc']
+                          },
             "Hoover's" : {
                             'name' : "Hoover\'s",
                             'logo' : 'logo-hoovers.png',
@@ -8,11 +29,11 @@ var profiles = {
                             'address': "2002 Manor Rd, Austin, TX 78722",
                             'fonts' : ['Open Sans','Oswald'],
                             'colors' : ['#FFE001','#C83C09','#F88C00','#009ADD','#B6561B','#FFFFFF'],
-                            'photos' : ['hoovers-1.jpg',
-                                        'hoovers-2.jpg',
-                                        'hoovers-3.jpg',
-                                        'hoovers-4.jpg',
-                                        'hoovers-5.jpg']
+                            'photos' : ['https://drive.google.com/uc?id=0B_TWeTee0fCmR05EenhLQVRqcFU',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmdy15UVpFRHluWlk',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmWld0dnhGdDJhRk0',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmYVNxTU85NFJOdmM',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmTHkybTZDUEMxbGc']
                           },
 
             "Eagle Transmission" : {
@@ -22,12 +43,12 @@ var profiles = {
                             'phone' : "(512) 448-4747",
                             'website': "www.austineagletransmission.com",
                             'address': "6218 Manchaca Rd, Austin, TX 78745",
-                            'fonts' : ['Helvetica Neue','PT Sans Narrow'],
-                            'colors' : ['#D9242A','#173785','#304050','#DEE7F1'],
-                            'photos' : ['eagle-1.jpg',
-                                        'eagle-2.jpg',
-                                        'eagle-3.jpg',
-                                        'eagle-4.jpg']
+                            'fonts' : ['League Spartan','League Gothic','PT Sans Narrow'],
+                            'colors' : ['#D9242A','#173785','#304050','#DEE7F1','#FFF'],
+                            'photos' : ['https://drive.google.com/uc?id=0B_TWeTee0fCmS2J3WHE4ZzFEdGc',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmbEg2ZkJNdWl3ODQ',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmdFFidnFUelZSbkU',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmendyYmVxMFBySFk']
                           },
 
             "Elements" : {
@@ -38,10 +59,10 @@ var profiles = {
                             'website': "www.elementslaserspa.com",
                             'address': "3801 S Congress Ave #106, Austin, TX 78704",
                             'fonts' : ['Playfair Display','Tahoma'],
-                            'colors' : ['#B3F4F6','#1BB5CA','#76899E','#F2EFEC','#D1C5B7','#DF3B39'],
-                            'photos' : ['elements-1.jpg',
-                                        'elements-2.jpg',
-                                        'elements-3.jpg',
-                                        'elements-4.jpg']
+                            'colors' : ['#B3F4F6','#1BB5CA','#76899E','#F2EFEC','#D1C5B7','#DF3B39','#FFF'],
+                            'photos' : ['https://drive.google.com/uc?id=0B_TWeTee0fCmY0Qtc1p5cFdadVU',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmc19TRjFTUlFSdG8',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmbVZrQ2xYRGNNOVE',
+                                        'https://drive.google.com/uc?id=0B_TWeTee0fCmRm9VQ1NMWlhhS1E']
                           },
 }

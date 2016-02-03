@@ -159,6 +159,10 @@ input:focus {
 [data-font="Tahoma"] { font-family: "Tahoma"; }
 [data-font="PT Sans Narrow"] { font-family: "PT Sans Narrow"; }
 [data-font="Playfair Display"] { font-family: "Playfair Display"; }
+[data-font="League Gothic"] { font-family: "League Gothic"; }
+[data-font="League Spartan"] { font-family: "League Spartan"; }
+[data-font="Damion"] { font-family: "Damion"; }
+[data-font="Lato"] { font-family: "Lato"; }
 
 
 /* ------ */
@@ -248,6 +252,9 @@ input[type=text] {
       color: #fff;
       font-size: 2em;
       white-space: pre-wrap;
+    }
+    .tmark-text-primary.has-text-shadow {
+      text-shadow: 0px 2px 8px rgba(0,0,0,0.5);
     }
 
 /* Template 001 */
