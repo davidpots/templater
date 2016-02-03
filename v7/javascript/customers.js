@@ -1,4 +1,20 @@
+
 var profiles = {
+            "Generic" : {
+                            'name' : "Generic",
+                            'logo' : 'logo-generic.png',
+                            'bio'   : "---",
+                            'phone' : "---",
+                            'website': "---",
+                            'address': "---",
+                            'fonts' : ['Damion','Lato','Open Sans','Oswald','League Spartan','League Gothic','PT Sans Narrow','Playfair Display','Tahoma','Amatic SC'],
+                            'colors' : ["#001f3f","#0074D9","#7FDBFF","#39CCCC","#3D9970","#2ECC40","#01FF70","#FFDC00","#FF851B","#FF4136","#85144b","#F012BE","#B10DC9","#111111","#AAAAAA","#DDDDDD"],
+                            'photos' : ['images/generic/texture1.jpg',
+                                        'images/generic/texture2.jpg',
+                                        'images/generic/texture3.jpg',
+                                        'images/generic/texture4.jpg',
+                                        'images/generic/texture5.jpg']
+                          },
             "Delish" : {
                             'name' : "Delish",
                             'logo' : 'logo-delish.png',
