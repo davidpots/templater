@@ -28,6 +28,36 @@ $(document).ready(function(){
     templateList.append($('<option data-name="'+ $(obj).data('name') + '"/>').val($(obj).data('name')).text($(obj).data('name')));
   });
 
+  /* TEMPLATE UI: BG Radio Buttons */
+  function bgTypeUIPrep() {
+    if($('input[value=bgColorOnly').is(':checked')) {
+      $('.template-item--bg-image').hide();
+      $('.template-item--bg-color').show();
+      $('.tmark-bg-image').hide();
+      $('.tmark-bg-color').show();
+      $('.tmark-bg-color').removeClass('bg-screen');
+    }
+    if($('input[value=bgImageColor').is(':checked')) {
+      $('.template-item--bg-image').show();
+      $('.template-item--bg-color').show();
+      $('.tmark-bg-image').show();
+      $('.tmark-bg-image').addClass('bg-desaturate');
+      $('.tmark-bg-color').addClass('bg-screen');
+      $('.tmark-bg-color').show();
+    }
+    if($('input[value=bgImageOnly').is(':checked')) {
+      $('.template-item--bg-color').hide();
+      $('.template-item--bg-image').show();
+      $('.tmark-bg-image').show();
+      $('.tmark-bg-image').removeClass('bg-desaturate');
+      $('.tmark-bg-color').hide();
+    }
+  }
+  bgTypeUIPrep(); // check on page load
+
+  $('input[type=radio]').click(function() {
+     bgTypeUIPrep(); // check if the radio buttons are clicked
+  });
 
   /* TEMPLATE LIST: on dropdown change */
   $("#template-list").change(function () {
@@ -43,12 +73,12 @@ $(document).ready(function(){
     $('.primary-text--input').val( $('.active-template .tmark-text-primary').text() );
     $('.secondary-text--input').val( $('.active-template .tmark-text-secondary').text() );
 
-    if ( $('.active-template .tmark-bg-image').length == 0 ) {
-       $('.template-item--bg-image').hide();
-    }
-    if ( $('.active-template .tmark-bg-color').length == 0 ) {
-       $('.template-item--bg-color').hide();
-    }
+    // if ( $('.active-template .tmark-bg-image').length == 0 ) {
+    //    $('.template-item--bg-image').hide();
+    // }
+    // if ( $('.active-template .tmark-bg-color').length == 0 ) {
+    //    $('.template-item--bg-color').hide();
+    // }
     if ( $('.active-template .tmark-text-primary').length == 0 ) {
        $('.template-item--text-primary').hide();
     }
@@ -86,27 +116,8 @@ $(document).ready(function(){
 
      /* Show the photos for that profile */
      $.each(profiles[selectedProfile].photos, function(i,obj) {
-       $.each(obj.photoFile, function(i2,filename) {
-         $('.photo-list').append($('<li><img data-bg-image="'+filename+'" src="images/merchants/'+filename+'" /></li>'));
-       });
-
+       $('.photo-list').append($('<li><img data-bg-image="'+obj+'" src="images/merchants/'+obj+'" /></li>'));
      });
-     //
-    //  $.each(profiles[customer].photos, function(i,obj) {
-     //
-    //    $.each(obj.photoFile, function(i2,filename) {
-    //     $('.customer-photos').addClass('grid').append( "<li class='grid-item "+ obj.photoType +"'><img src='images/merchants/"+ filename +"' /></li>" );
-    //    });
-     //
-    //  });
-
-
-
-
-
-
-
-
 
    });
 
@@ -156,7 +167,7 @@ $(document).ready(function(){
 
     if ( $('.active').data('font-face') ) {
       // $('input.active').val(fnt);
-      $('.tmark-text-primary').attr('data-font-current',fnt).css('font-family',fnt);
+      $('.tmark-text-primary').css('font-family',fnt);
       $('.tmark-text-secondary').css('font-family',fnt);
     }
   });
